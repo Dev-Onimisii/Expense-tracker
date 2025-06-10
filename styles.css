@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: white;
+  background-color: #f4f1f8;
 }
 .container {
-  background-color: #f4f1f8;
+  background-color: white;
+  width: 40%;
+  margin: 15% 35%;
+  padding: 4rem 1rem;
 }

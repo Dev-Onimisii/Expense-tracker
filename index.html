@@ -10,21 +10,28 @@
     <div class="container">
       <h1>SIMPLE EXPENSE TRACKER</h1>
       <div class="user-input">
-        <form>
+        <form id="expense-form">
           <!-- Date -->
           <label for="date">Date</label> <br />
-          <input type="text" name="date" placeholder="Enter date..." /> <br />
+          <input
+            type="date"
+            id="date"
+            name="date"
+            placeholder="Enter date..." />
+          <br />
           <!-- Category -->
           <label for="category">Category</label> <br />
-          <input
-            type="text"
-            name="category"
-            placeholder="Enter the category..." />
+          <select id="category">
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Shopping">Shopping</option>
+          </select>
           <br />
           <!-- Description -->
           <label for="description">Description</label> <br />
           <input
             type="text"
+            id="description"
             name="description"
             placeholder="Enter the description..." />
           <br />
@@ -36,6 +43,24 @@
             placeholder="Enter the amount..." /><br />
           <button>Add Expense</button>
         </form>
+        <div class="expense-list">
+          <hr />
+          <h2>Expenses</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody id="expense-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <div id="total-container">
+        <h3>Total: $<span id="total-amount">0.00</span></h3>
       </div>
     </div>
     <script src="function.js"></script>

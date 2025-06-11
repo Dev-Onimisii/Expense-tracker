@@ -8,8 +8,9 @@ body {
 }
 .container {
   background-color: white;
-  width: 40%;
-  margin: 15% 34%;
+  width: 90%;
+  max-width: 600px;
+  margin: 5% auto;
   padding: 2rem 1rem;
   color: rgb(58, 58, 69);
   border-radius: 1rem;
@@ -22,5 +23,59 @@ body {
 }
 .user-input form {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-input input,
+.user-input select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 120px;
+  font-size: 1rem;
+}
+.user-input button {
+  padding: 0.6rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.user-input button:hover {
+  background-color: #2563eb;
+}
+.expense-list {
+  margin-top: 2rem;
+}
+.expense-list h2 {
+  margin-top: 1.5rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+tfoot td {
+  font-weight: bold;
+  text-align: right;
 }

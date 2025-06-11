@@ -23,7 +23,7 @@ body {
 }
 form .form-row {
   display: flex;
-  flex-wrap: wrap;
+
   gap: 1rem;
   align-items: center;
 }
@@ -37,16 +37,17 @@ form select {
   min-width: 120px;
   font-size: 1rem;
 }
-.user-input button {
-  padding: 0.6rem 1rem;
+form button {
+  padding: 0.5rem 1rem;
   background-color: #3b82f6;
   color: white;
   border: none;
   border-radius: 6px;
+  white-space: nowrap;
   cursor: pointer;
   font-weight: bold;
 }
-.user-input button:hover {
+form button:hover {
   background-color: #2563eb;
 }
 .expense-list {
@@ -77,4 +78,10 @@ th {
 tfoot td {
   font-weight: bold;
   text-align: right;
+}
+@media (max-width: 600px) {
+  form .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }

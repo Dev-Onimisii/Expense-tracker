@@ -21,24 +21,25 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-form .form-row {
+.form-row {
   display: flex;
-
   gap: 1rem;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
-form input,
-form select {
+.form-row input,
+.form-row select {
   padding: 0.5rem;
   border-radius: 6px;
   outline: none;
   border: 1px solid #ccc;
   flex: 1;
-  min-width: 120px;
+  min-width: 90px;
   font-size: 1rem;
 }
-form button {
-  padding: 0.5rem 1rem;
+.form-row button {
+  padding: 0.6rem 0.8rem;
   background-color: #3b82f6;
   color: white;
   border: none;
@@ -47,7 +48,7 @@ form button {
   cursor: pointer;
   font-weight: bold;
 }
-form button:hover {
+.form-row button:hover {
   background-color: #2563eb;
 }
 .expense-list {
@@ -79,9 +80,11 @@ tfoot td {
   font-weight: bold;
   text-align: right;
 }
+#total-container {
+  margin-top: 1.5rem;
+}
 @media (max-width: 600px) {
-  form .form-row {
-    flex-direction: column;
-    align-items: stretch;
+  .form-row {
+    flex-wrap: wrap;
   }
 }

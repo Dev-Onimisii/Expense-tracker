@@ -10,39 +10,38 @@
     <div class="container">
       <h1>SIMPLE EXPENSE TRACKER</h1>
       <div class="user-input">
-        <form id="expense-form">
-          <!-- Date -->
-          <label for="date">Date</label> <br />
-          <input
-            type="date"
-            id="date"
-            name="date"
-            placeholder="Enter date..." />
-          <br />
-          <!-- Category -->
-          <label for="category">Category</label> <br />
-          <select id="category">
-            <option value="Food">Food</option>
-            <option value="Transport">Transport</option>
-            <option value="Shopping">Shopping</option>
-          </select>
-          <br />
-          <!-- Description -->
-          <label for="description">Description</label> <br />
-          <input
-            type="text"
-            id="description"
-            name="description"
-            placeholder="Enter the description..." />
-          <br />
-          <!-- Amount -->
-          <label for="amount">Amount</label><br />
-          <input
-            type="text"
-            name="amount"
-            placeholder="Enter the amount..." /><br />
-          <button>Add Expense</button>
-        </form>
+        <div class="form-row">
+          <form id="expense-form">
+            <!-- Date -->
+            <label for="date">Date</label> <br />
+            <input type="date" id="date" placeholder="Enter date..." />
+            <br />
+            <!-- Category -->
+            <label for="category">Category</label> <br />
+            <select id="category">
+              <option value="Food">Food</option>
+              <option value="Transport">Transport</option>
+              <option value="Shopping">Shopping</option>
+            </select>
+            <br />
+            <!-- Description -->
+            <label for="description">Description</label> <br />
+            <input
+              type="text"
+              id="description"
+              name="description"
+              placeholder="Enter the description..." />
+            <br />
+            <!-- Amount -->
+            <label for="amount">Amount</label><br />
+            <input
+              type="text"
+              name="amount"
+              placeholder="Enter the amount..." /><br />
+            <button>Add Expense</button>
+          </form>
+        </div>
+
         <div class="expense-list">
           <hr />
           <h2>Expenses</h2>

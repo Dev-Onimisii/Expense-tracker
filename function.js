@@ -4,4 +4,4 @@ const category = document.querySelector("#category");
 const description = document.querySelector("#description");
 const amount = document.querySelector("#amount");
 const expenseTable = document.querySelector("#expense-table-body");
-const totalContainer =
+const totalContainer = document.querySelector;

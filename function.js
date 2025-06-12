@@ -5,4 +5,4 @@ const description = document.querySelector("#description");
 const amount = document.querySelector("#amount");
 const expenseTable = document.querySelector("#expense-table-body");
 const totalContainer = document.querySelector("#total-container");
-const totalAmount = document.querySelector("#");
+const totalAmount = document.querySelector("#total-container");

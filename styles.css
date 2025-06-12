@@ -87,4 +87,7 @@ tfoot td {
   .form-row {
     flex-wrap: wrap;
   }
+  .container {
+    margin-top: 8rem;
+  }
 }

@@ -40,16 +40,17 @@ body {
 }
 .form-row button {
   padding: 0.6rem 0.8rem;
-  background-color: #3b82f6;
+  background-color: #4472d7;
   color: white;
   border: none;
   border-radius: 6px;
   white-space: nowrap;
   cursor: pointer;
   font-weight: bold;
+  transition: 0.5s;
 }
 .form-row button:hover {
-  background-color: #2563eb;
+  background-color: #3b82f6;
 }
 .expense-list {
   margin-top: 2rem;

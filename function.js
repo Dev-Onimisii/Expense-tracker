@@ -31,4 +31,7 @@ form.addEventListener("submit", function (e) {
 const renderTable = () => {
   tableBody.innerHTML = "";
   let total = 0;
+  expenses.forEach((expenses) => {
+    const row = document.createElement("tr");
+  });
 };

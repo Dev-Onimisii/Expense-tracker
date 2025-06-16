@@ -45,5 +45,5 @@ const renderTable = () => {
     total += expenses.amount;
   });
 
-  totalAmount.textContent = `$${total.toFixed(2)}`;
+  totalAmount.textContent = `${total.toFixed(2)}`;
 };

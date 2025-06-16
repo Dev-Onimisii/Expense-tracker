@@ -25,4 +25,10 @@ form.addEventListener("submit", function (e) {
   expenses.push(newExpense);
 
   form.reset();
+  renderTable();
 });
+
+const renderTable = () => {
+  tableBody.innerHTML = "";
+  let total = 0;
+};

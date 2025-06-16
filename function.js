@@ -13,4 +13,5 @@ form.addEventListener("submit", function (e) {
 
   const date = dateInput.value;
   const category = categoryInput.value;
+  const description = descriptionInput.value;
 });

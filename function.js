@@ -7,3 +7,10 @@ const tableBody = document.getElementById("expense-table-body");
 const totalAmount = document.getElementById("total-amount");
 
 let expense = [];
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const date = dateInput.value;
+  const category = categoryInput.value;
+});

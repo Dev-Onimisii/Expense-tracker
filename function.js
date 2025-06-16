@@ -15,4 +15,6 @@ form.addEventListener("submit", function (e) {
   const category = categoryInput.value;
   const description = descriptionInput.value;
   const amount = parseFloat(amountInput.value);
+
+  if (!date || !category || !description || isNaN(amount) || amount <= 0)
 });

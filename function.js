@@ -6,7 +6,7 @@ const amountInput = document.getElementById("amount");
 const tableBody = document.getElementById("expense-table-body");
 const totalAmount = document.getElementById("total-amount");
 
-let expense = [];
+let expenses = [];
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -18,5 +18,11 @@ form.addEventListener("submit", function (e) {
 
   if (!date || !category || !description || isNaN(amount) || amount <= 0) {
     alert(`Please, fill in all fields all fields correctly before submitting!`);
+    return;
   }
+
+  const newExpense = { date, category, description, amount };
+  expenses.push(newExpense);
+
+  form.reset();
 });

@@ -33,5 +33,12 @@ const renderTable = () => {
   let total = 0;
   expenses.forEach((expenses) => {
     const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${expenses.date}</td>
+      <td>${expenses.category}</td>
+      <td>${expenses.description}</td>
+      <td>$${expenses.amount.toFixed(2)}</td>
+      `;
   });
 };

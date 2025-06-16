@@ -40,5 +40,10 @@ const renderTable = () => {
       <td>${expenses.description}</td>
       <td>$${expenses.amount.toFixed(2)}</td>
       `;
+
+    tableBody.appendChild(row);
+    total += expenses.amount;
   });
+
+  totalAmount.textContent = `$${total.toFixed(2)}`;
 };

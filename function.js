@@ -5,3 +5,5 @@ const descriptionInput = document.getElementById("description");
 const amountInput = document.getElementById("amount");
 const tableBody = document.getElementById("expense-table-body");
 const totalAmount = document.getElementById("total-amount");
+
+let expense = [];

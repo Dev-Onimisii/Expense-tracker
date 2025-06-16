@@ -16,5 +16,7 @@ form.addEventListener("submit", function (e) {
   const description = descriptionInput.value;
   const amount = parseFloat(amountInput.value);
 
-  if (!date || !category || !description || isNaN(amount) || amount <= 0)
+  if (!date || !category || !description || isNaN(amount) || amount <= 0) {
+    alert(`Please, fill in all fields all fields correctly before submitting!`);
+  }
 });

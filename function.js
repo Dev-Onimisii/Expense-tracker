@@ -38,7 +38,7 @@ const renderTable = () => {
       <td>${expenses.date}</td>
       <td>${expenses.category}</td>
       <td>${expenses.description}</td>
-      <td>$${expenses.amount.toFixed(2)}</td>
+      <td>₦${expenses.amount.toFixed(2)}</td>
       `;
 
     tableBody.appendChild(row);

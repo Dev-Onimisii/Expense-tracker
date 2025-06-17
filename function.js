@@ -6,8 +6,11 @@ const amountInput = document.getElementById("amount");
 const tableBody = document.getElementById("expense-table-body");
 const totalAmount = document.getElementById("total-amount");
 
-let expenses = [];
+let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 
+renderTable(expenses);
+
+console.log(expenses);
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -24,11 +27,12 @@ form.addEventListener("submit", function (e) {
   const newExpense = { date, category, description, amount };
   expenses.push(newExpense);
 
+  localStorage.setItem("expenses", JSON.stringify(expenses));
   form.reset();
-  renderTable();
+  renderTable(expenses);
 });
 
-const renderTable = () => {
+function renderTable(expenses) {
   tableBody.innerHTML = "";
   let total = 0;
   expenses.forEach((expenses) => {
@@ -46,4 +50,4 @@ const renderTable = () => {
   });
 
   totalAmount.textContent = `${total.toFixed(2)}`;
-};
+}

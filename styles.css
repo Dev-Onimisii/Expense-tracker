@@ -40,7 +40,7 @@ body {
 }
 .form-row button {
   padding: 0.6rem 0.8rem;
-  background-color: #1e4eb6;
+  background-color: green;
   color: white;
   border: none;
   border-radius: 6px;
@@ -50,7 +50,7 @@ body {
   transition: 0.4s;
 }
 .form-row button:hover {
-  background-color: #3b82f6;
+  background-color: rgb(29, 149, 16);
 }
 .expense-list {
   margin-top: 2rem;

@@ -12,7 +12,7 @@ body {
   max-width: 600px;
   margin: 5% auto;
   padding: 2rem 1rem;
-  color: rgb(58, 58, 69);
+  color: rgb(69, 69, 98);
   border-radius: 1rem;
 }
 .container h1 {
@@ -31,7 +31,7 @@ body {
 .form-row input,
 .form-row select {
   padding: 0.5rem;
-  border-radius: 6px;
+  border-radius: 0.8rem;
   outline: none;
   border: 1px solid #ccc;
   flex: 1;
@@ -43,7 +43,7 @@ body {
   background-color: green;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.4rem;
   white-space: nowrap;
   cursor: pointer;
   font-weight: bold;

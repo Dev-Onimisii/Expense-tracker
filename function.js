@@ -34,7 +34,7 @@ form.addEventListener("submit", function (e) {
 function renderTable(expenses) {
   tableBody.innerHTML = "";
   let total = 0;
-  expenses.forEach((expenses) => {
+  expenses.forEach((expenses, index) => {
     const row = document.createElement("tr");
 
     row.innerHTML = `
@@ -42,6 +42,9 @@ function renderTable(expenses) {
       <td>${expenses.category}</td>
       <td>${expenses.description}</td>
       <td>₦${expenses.amount.toFixed(2)}</td>
+      <td>
+        <button class="delete-btn" data-index="${index}">Delete</button>
+      </td>
       `;
 
     tableBody.appendChild(row);
@@ -49,4 +52,13 @@ function renderTable(expenses) {
   });
 
   totalAmount.textContent = `${total.toFixed(2)}`;
+  const deleteButtons = document.querySelectorAll(".delete-btn");
+
+  deleteButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const index = parseInt(this.getAttribute("data-index"));
+      expenses.splice(index, 1);
+      renderTable();
+    });
+  });
 }

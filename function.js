@@ -41,7 +41,9 @@ function renderTable() {
       <td>${expense.description}</td>
       <td>₦${expense.amount.toFixed(2)}</td>
       <td>
-        <button class="delete-btn" data-index="${index}">Delete</button>
+        <button class="delete-btn" data-index="${index}">
+          <i class="fas fa-trash"></i>
+        </button>
       </td>
     `;
 

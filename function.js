@@ -8,9 +8,6 @@ const totalAmount = document.getElementById("total-amount");
 
 let expenses = [];
 
-renderTable(expenses);
-
-console.log(expenses);
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -20,7 +17,7 @@ form.addEventListener("submit", function (e) {
   const amount = parseFloat(amountInput.value);
 
   if (!date || !category || !description || isNaN(amount) || amount <= 0) {
-    alert(`Please, fill in all fields correctly before submitting!`);
+    alert("Please, fill in all fields correctly before submitting!");
     return;
   }
 
@@ -28,30 +25,32 @@ form.addEventListener("submit", function (e) {
   expenses.push(newExpense);
 
   form.reset();
-  renderTable(expenses);
+  renderTable();
 });
 
-function renderTable(expenses) {
+function renderTable() {
   tableBody.innerHTML = "";
   let total = 0;
-  expenses.forEach((expenses, index) => {
+
+  expenses.forEach((expense, index) => {
     const row = document.createElement("tr");
 
     row.innerHTML = `
-      <td>${expenses.date}</td>
-      <td>${expenses.category}</td>
-      <td>${expenses.description}</td>
-      <td>₦${expenses.amount.toFixed(2)}</td>
+      <td>${expense.date}</td>
+      <td>${expense.category}</td>
+      <td>${expense.description}</td>
+      <td>₦${expense.amount.toFixed(2)}</td>
       <td>
         <button class="delete-btn" data-index="${index}">Delete</button>
       </td>
-      `;
+    `;
 
     tableBody.appendChild(row);
-    total += expenses.amount;
+    total += expense.amount;
   });
 
   totalAmount.textContent = `${total.toFixed(2)}`;
+
   const deleteButtons = document.querySelectorAll(".delete-btn");
 
   deleteButtons.forEach((button) => {
@@ -62,3 +61,4 @@ function renderTable(expenses) {
     });
   });
 }
+renderTable();

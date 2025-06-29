@@ -83,8 +83,8 @@ table {
 }
 
 .delete-btn:hover {
-  background-color: #dc2626; /* darker red on hover */
-  transform: scale(1.05); /* subtle pop effect */
+  background-color: #dc2626;
+  transform: scale(1.05);
 }
 
 th,

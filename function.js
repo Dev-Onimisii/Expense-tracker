@@ -6,7 +6,7 @@ const amountInput = document.getElementById("amount");
 const tableBody = document.getElementById("expense-table-body");
 const totalAmount = document.getElementById("total-amount");
 
-let expenses = [];
+let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();

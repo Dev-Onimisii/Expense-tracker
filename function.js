@@ -60,6 +60,9 @@ function renderTable() {
     button.addEventListener("click", function () {
       const index = parseInt(this.getAttribute("data-index"));
       expenses.splice(index, 1);
+
+      localStorage.setItem("expenses", JSON.stringify(expenses));
+
       renderTable();
     });
   });

@@ -24,6 +24,7 @@ form.addEventListener("submit", function (e) {
   const newExpense = { date, category, description, amount };
   expenses.push(newExpense);
 
+  localStorage.setItem("expenses", JSON.stringify(expenses));
   form.reset();
   renderTable();
 });

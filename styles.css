@@ -66,6 +66,27 @@ table {
   font-size: 0.95rem;
 }
 
+.delete-btn {
+  background-color: #f87171; /* soft red */
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.delete-btn i {
+  font-size: 1rem;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626; /* darker red on hover */
+  transform: scale(1.05); /* subtle pop effect */
+}
+
 th,
 td {
   border: 1px solid #e5e7eb;

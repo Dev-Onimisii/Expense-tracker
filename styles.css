@@ -113,12 +113,4 @@ tfoot td {
   .container {
     margin-top: 8rem;
   }
-  .delete-btn {
-    padding: 0.35rem 0.5rem;
-    font-size: 0.85rem;
-    border-radius: 4px;
-  }
-  .delete-btn i {
-    font-size: 0.9rem;
-  }
 }

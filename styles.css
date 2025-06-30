@@ -106,11 +106,72 @@ tfoot td {
 #total-container {
   margin-top: 1.5rem;
 }
+
 @media (max-width: 600px) {
-  .form-row {
-    flex-wrap: wrap;
-  }
   .container {
-    margin-top: 8rem;
+    width: 98%;
+    padding: 1rem 0.3rem;
+    margin-top: 2rem;
+    min-width: unset;
+  }
+
+  .container h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+
+  .form-row input,
+  .form-row select {
+    font-size: 0.95rem;
+    padding: 0.4rem;
+    min-width: 0;
+  }
+
+  .form-row button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .expense-list h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+    width: 100%;
+    min-width: unset;
+    table-layout: auto;
+  }
+
+  .expense-list {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 0.4rem;
+    white-space: nowrap;
+  }
+
+  .delete-btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+  }
+  .delete-btn i {
+    font-size: 0.9rem;
+  }
+
+  #total-container h3 {
+    font-size: 1rem;
   }
 }

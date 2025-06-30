@@ -114,5 +114,6 @@ tfoot td {
     margin-top: 8rem;
   }
   .delete-btn {
+    padding: 0.35rem 0.5rem;
   }
 }

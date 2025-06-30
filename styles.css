@@ -119,5 +119,6 @@ tfoot td {
     border-radius: 4px;
   }
   .delete-btn i {
+    font-size: 0.9rem;
   }
 }

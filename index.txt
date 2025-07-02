@@ -1,3 +1,4 @@
+                       THE FIRST FEATURES
 The features of the application are as follows:
 
 1. Input field for the user to input the date, category, description of the category and then the amount of the expense.

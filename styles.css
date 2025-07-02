@@ -67,15 +67,13 @@ table {
 }
 
 .delete-btn {
-  background-color: #f87171; /* soft red */
+  background-color: #dc2626;
   color: white;
   border: none;
   padding: 0.5rem;
   border-radius: 6px;
   cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
+  transition: 0.2s;
 }
 
 .delete-btn i {
@@ -83,8 +81,7 @@ table {
 }
 
 .delete-btn:hover {
-  background-color: #dc2626;
-  transform: scale(1.05);
+  background-color: #ed4545;
 }
 
 th,

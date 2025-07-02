@@ -1,0 +1,14 @@
+The features of the application are as follows:
+
+1. Input field for the user to input the date, category, description of the category and then the amount of the expense.
+
+2. A table is rendered upon the completion of filling out the form
+
+3. There is delete button that works for each expense should in case you want to want to delete an expense.
+
+4.Do not panic as everything you've selected before won't delete upon refreshing or quiting your browser as everything is being stored inside a localStorage.
+
+                             NEW UPDATE TO BE ADDED
+1. The expense tracker is just like the debit account already. Lets try adding a new input field where the user inputs the amount he wants to spend. Lets call this field "Balance"
+2. Then as he add expense, the money should be gradually deducted from the Balance till everything is used up. 
+3. If the Balance turns "0", the user should not be able to add expense again.
